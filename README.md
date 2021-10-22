@@ -73,4 +73,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### levantar el servidor api json para probar la aplicacion en windos ejecutando
 
 npx json-server --watch db.json --port 4000
-http://localhost:4000

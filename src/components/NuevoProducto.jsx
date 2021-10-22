@@ -28,7 +28,11 @@ const NuevoProducto = () => {
                                     className="form-control" 
                                     placeholder="Precio Producto"/>
                             </div>
-                            <button type="submit" className="btn btn-primary font-weight-bold text-uppercase d-block w-100"></button>
+                            <button 
+                                type="submit" 
+                                className="btn btn-primary font-weight-bold text-uppercase d-block w-100">
+                                    Agregar
+                            </button>
                         </form>
                     </div>
                 </div>
