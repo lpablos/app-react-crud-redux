@@ -73,3 +73,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### levantar el servidor api json para probar la aplicacion en windos ejecutando
 
 npx json-server --watch db.json --port 4000
+
+## redux es la aplicacion, react-redux es la conexion para react con redux, redux-thunk son funciones asiconas
