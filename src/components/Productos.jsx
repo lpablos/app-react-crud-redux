@@ -6,13 +6,13 @@ const Productos = () => {
         <Fragment>
             <h2 className="text-center my-5">Listado de Productos</h2>
             <table className="table table-striped">
-                <t-head className="bg-primary table-dark">
+                <thead className="bg-primary table-dark">
                     <tr>
                         <th scope="col">Nombre</th>
                         <th scope="col">Precio</th>
                         <th scope="col">Acciones</th>
                     </tr>
-                </t-head> 
+                </thead> 
                 <t-body>
                     
                 </t-body>
