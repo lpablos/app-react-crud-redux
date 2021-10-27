@@ -29,6 +29,7 @@ export default function( state = initialState, action){
             return {
                 ...state,
                 loading: false,
+                error: null,
                 productos: [...state.productos, action.payload]
             }
         case AGREGAR_PRODUCTO_ERROR:
