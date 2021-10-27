@@ -13,17 +13,20 @@ const NuevoProducto = () => {
     // Utilizar use dispatch y te crea una funcion
     const dispatch = useDispatch()
     // Llamada del la accion del Production Action
-    const agregarProducto = () => dispatch(crearNuevoProductoAction())
+    const agregarProducto = producto => dispatch(crearNuevoProductoAction(producto))
 
     const submitNuevoProducto = e => {
         e.preventDefault()
         // Validar formualrio 
-        if( nombre.trim() === '' || precio.trim() <= 0 ){
-            
+        if( nombre.trim() === '' || precio <= 0 ){
+            return
         }
         // Si no hay errores
         // Crear el nuevo producto
-        agregarProducto()
+        agregarProducto({
+            nombre,
+            precio
+        })
     }
     return (
         <div className="row justify-content-center">
