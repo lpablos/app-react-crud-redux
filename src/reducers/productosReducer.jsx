@@ -4,6 +4,9 @@ import {
     AGREGAR_PRODUCTO,
     AGREGAR_PRODUCTO_EXITO,
     AGREGAR_PRODUCTO_ERROR,
+    COMENZAR_DESCARGA_PRODUCTOS,
+    DESCARGA_PRODUCTOS_EXITO,
+    DESCARGA_PRODUCTOS_ERROR
 } from '../types'
 
 // Cada reducer tiene su propio state
@@ -20,6 +23,7 @@ export default function( state = initialState, action){
         // case value:
             
         //     break;
+        case COMENZAR_DESCARGA_PRODUCTOS:
         case AGREGAR_PRODUCTO:
             return {
                 ...state,
@@ -30,14 +34,27 @@ export default function( state = initialState, action){
                 ...state,
                 loading: false,
                 error: null,
-                productos: [...state.productos, action.payload]
+                productos: [...state.productos, action.payload] 
             }
+        case DESCARGA_PRODUCTOS_ERROR:
         case AGREGAR_PRODUCTO_ERROR:
             return {
                 ...state,
                 loading: false,
                 error: action.payload
             }
+        case DESCARGA_PRODUCTOS_EXITO:
+            return {
+                ...state,
+                loading: false,
+                error: null,
+                productos: action.payload
+            }
+        // case COMENZAR_DESCARGA_PRODUCTOS:
+        //     return {
+        //         ...state,
+        //         loading: action.payload
+        //     }
     
         default:
             return state
