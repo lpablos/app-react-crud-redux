@@ -20,11 +20,22 @@ const Productos = () => {
 
     // Obtener el state de redux
     const productos = useSelector( state => state.productos.productos)
-    
+    const error = useSelector( state => state.productos.error)
+    const cargando = useSelector( state => state.productos.loading)
     
     return (
         <Fragment>
             <h2 className="text-center my-5">Listado de Productos</h2>
+            { 
+                error
+                    ?<p className="font-weight-bold alert alert-danger text-cenrter  mt-4">Existio un error</p>
+                    : null
+            }
+            {
+                cargando
+                    ? <p className="text-center ">Cargando...</p>
+                    : null
+            }
             <table className="table table-striped">
                 <thead className="bg-primary table-dark">
                     <tr>
@@ -34,6 +45,7 @@ const Productos = () => {
                     </tr>
                 </thead> 
                 <tbody>
+                    
                     {
                         productos.length === 0 
                         ? 'No hay productos' 
