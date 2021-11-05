@@ -1,59 +1,24 @@
 {
   "productos": [
     {
-      "nombre": "Rib Eye 800g",
-      "precio": "200",
-      "id": 4
+      "nombre": "we424234",
+      "precio": 65434,
+      "id": 16
     },
     {
-      "nombre": "Jugo de Fresa",
-      "precio": "200",
-      "id": 5
+      "nombre": "asdasdsad",
+      "precio": 4334,
+      "id": 17
     },
     {
-      "nombre": "pintura rosada",
-      "precio": 23,
-      "id": 6
+      "nombre": "ffffff",
+      "precio": 5678887,
+      "id": 18
     },
     {
-      "nombre": "chapa de Oro",
-      "precio": 42,
-      "id": 7
-    },
-    {
-      "nombre": "asdad",
-      "precio": 2,
-      "id": 8
-    },
-    {
-      "nombre": "asdad",
-      "precio": 2,
-      "id": 9
-    },
-    {
-      "nombre": "jugo de piña",
-      "precio": 244,
-      "id": 10
-    },
-    {
-      "nombre": "Algui aqui",
-      "precio": 23,
-      "id": 11
-    },
-    {
-      "nombre": "Otro producto",
-      "precio": 123213,
-      "id": 12
-    },
-    {
-      "nombre": "das",
-      "precio": 2,
-      "id": 13
-    },
-    {
-      "nombre": "asdasd",
-      "precio": 2,
-      "id": 14
+      "nombre": "ddddd",
+      "precio": 5333455,
+      "id": 19
     }
   ]
 }
