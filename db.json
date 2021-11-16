@@ -29,6 +29,26 @@
       "nombre": "aqui mero222",
       "precio": 423424342,
       "id": 20
+    },
+    {
+      "nombre": "cosas",
+      "precio": 2312,
+      "id": 21
+    },
+    {
+      "nombre": "producto",
+      "precio": 123,
+      "id": 22
+    },
+    {
+      "nombre": "",
+      "precio": 123123,
+      "id": 23
+    },
+    {
+      "nombre": "Pastilla Pato",
+      "precio": 213123,
+      "id": 24
     }
   ]
 }

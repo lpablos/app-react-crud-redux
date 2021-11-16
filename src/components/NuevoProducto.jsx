@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 // Actions de redux
 import  { crearNuevoProductoAction } from '../actions/productosActions'
+import { monstrarAlertaAction, ocultarAlertaAction } from '../actions/alertaActions'
 
 const NuevoProducto = ({history}) => {
     // State del componente
@@ -16,6 +17,7 @@ const NuevoProducto = ({history}) => {
     // Acceder al state del store Producto
     const cargando = useSelector( state => state.productos.loading)
     const error = useSelector( state => state.productos.error)
+    const alerta = useSelector( state=>state.alerta.alerta )
 
     // Llamada del la accion del Production Action
     const agregarProducto = producto => dispatch(crearNuevoProductoAction(producto))
@@ -25,9 +27,15 @@ const NuevoProducto = ({history}) => {
         e.preventDefault()
         // Validar formualrio 
         if( nombre.trim() === '' || precio <= 0 ){
+            const respuesta = {
+                msg: 'Ambos campos son obligatorios',
+                classes: 'alert alert-danger text-center text-uppercase p3'
+            }
+            dispatch(monstrarAlertaAction(respuesta))
             return
         }
         // Si no hay errores
+        dispatch(ocultarAlertaAction())
         // Crear el nuevo producto
         agregarProducto({
             nombre,
@@ -44,6 +52,11 @@ const NuevoProducto = ({history}) => {
                         <h2 className="text-center mb-4 font-weight-bold">
                             Agregar Nuevo Producto
                         </h2>
+                        {
+                            alerta
+                            ?<p className={alerta.classes}>{alerta.msg}</p>
+                            :null
+                        }
                         <form onSubmit={submitNuevoProducto} autocomplete="off">
                             <div className="form-group">
                                 <label htmlFor="">Nombre Producto</label>
