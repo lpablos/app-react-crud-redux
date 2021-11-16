@@ -20,8 +20,7 @@ export default function(state = initialState, action){
             return {
                 ...state,
                 alerta : null
-            }            
-    
+            }   
         default:
             return state;
     }

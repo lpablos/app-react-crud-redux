@@ -1,34 +1,9 @@
 {
   "productos": [
     {
-      "nombre": "Canasta de verduras",
-      "precio": "22222",
-      "id": 16
-    },
-    {
-      "nombre": "dddddd",
-      "precio": "33333",
-      "id": 17
-    },
-    {
-      "nombre": "pruabe de prodcuto vario",
-      "precio": 1231,
-      "id": 18
-    },
-    {
       "nombre": "aqui otro ",
       "precio": 2323,
       "id": 19
-    },
-    {
-      "nombre": "aqui mero",
-      "precio": 1231231,
-      "id": 20
-    },
-    {
-      "nombre": "aqui mero222",
-      "precio": 423424342,
-      "id": 20
     },
     {
       "nombre": "cosas",
@@ -41,14 +16,19 @@
       "id": 22
     },
     {
-      "nombre": "",
-      "precio": 123123,
-      "id": 23
-    },
-    {
       "nombre": "Pastilla Pato",
       "precio": 213123,
       "id": 24
+    },
+    {
+      "nombre": "|32133",
+      "precio": 123,
+      "id": 25
+    },
+    {
+      "nombre": "qweqwe",
+      "precio": 23,
+      "id": 26
     }
   ]
 }

@@ -38,7 +38,7 @@ const Producto = ({producto}) => {
     }
 
     return (
-        <tr>
+        <tr key={producto.id}>
             <td>
                 {nombre}
             </td>
